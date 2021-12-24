@@ -1,0 +1,102 @@
+body {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-row-gap: 30px;
+    font-family: 'Press Start 2P', cursive;
+    background: url(assets/background.jpg) no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main {
+    height: min-content;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px 60px;
+    border-radius: 10px;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+#memory {
+    width: 800px;
+    height: 540px;
+    display: none;
+    background: rgba(255, 255, 255, 0.125);
+    border-radius: 10px;
+    backdrop-filter: saturate(180%) blur(20px);
+    color: #000000;
+}
+
+#memory>div {
+    background: url(assets/q.jpg) no-repeat center;
+    background-size: contain;
+    border-radius: 15px;
+    border: #000 1px solid;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    font-size: 64px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#start {
+    text-align: center;
+}
+
+.start-btn {
+    text-align: center;
+    display: inline-block;
+    margin: 50px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 12px;
+}
+
+.start-btn:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+}
+
+.heading {
+    margin: 30px auto 0 auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+}
+
+#timer {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+}
+
+#time,
+#moves {
+    display: inline;
+}
+
+.game_start {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.leaderboard {
+    margin: 20px auto;
+    font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
+}

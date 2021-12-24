@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link href="game.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body onload="insertScore()">
+    <div class="main">
+        <div class="heading">
+            Memory Game 🎰
+        </div>
+        <div id="start">
+            <span id="start_button" class="start-btn" onclick="newGame()">START</span>
+            <div class="leaderboard" id="score">Best Score 🏆: </div>
+        </div>
+        <div class="game_start">
+            <div id="memory">
+
+            </div>
+            <div id="timer" style="display:none">
+                <p>Time Remaining: </p>
+                <div id="time"></div>
+                <div style="display: inline;">sec</div>
+                <p>No. of moves: </p>
+                <div id="moves"></div>
+                <div style="display: inline;">moves</div>
+            </div>
+        </div>
+    </div>
+</body>
